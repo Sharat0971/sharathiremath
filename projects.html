@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Sharat Hiremath</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="fade" >
+  
+  
+  <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <nav class="top-nav layout-final">
+    <div class="nav-left">
+      <a href="index.html" class="logo-btn">SH</a>
+    </div>
+    <div class="nav-right">
+      <a href="experience.html" class="nav-link">Work Experience</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="Sharat Hiremath.pdf" target="_blank" class="nav-link">Resume</a>
+    </div>
+  </nav>
+
+  <section class="projects-section section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3><b>RTL-to-GDSII Implementation and Verification of AI Accelerator using UVM and OpenROAD (In Progress)</b></h3>
+        <p>Developing a UVM-based testbench to verify AI accelerator functionality, focusing on constrained-random testing, assertion-based verification, and coverage-driven validation. Implementing full ASIC flow from RTL to GDSII using OpenROAD and Cadence tools, optimizing timing, power, and area to meet industry standards for AI hardware acceleration.</p>
+        <p><b>Skills:</b> AI Hardware Acceleration · ASIC Flow · Digital Design · SystemVerilog · Universal Verification Methodology (UVM) · OpenROAD · Cadence Innovus</p>
+      </div>
+
+      <div class="project-card">
+        <h3><b>AI Calculation Engine with Custom S-Bus and UVM Verification</b></h3>
+        <p>Designed and implemented a scalable AI Calculation Engine, leveraging FP11 floating-point arithmetic. The architecture utilized SUM4 blocks with multiple FPMs and FPAs, culminating in a SUM16 capable of 16 concurrent MAC operations. Developed a fully pipelined design to meet 1ns cycle target and implemented high-bandwidth 352-bit read and 176-bit write buses with arbitration protocols.</p>
+        <p>Verification was performed using UVM with custom drivers, monitors, and scoreboards. APB-style control logic enabled advanced features like auto-increment, fetch arbitration, and partial write-back. Tackled challenges like burst synchronization, partial results, and unaligned data handling.</p>
+        <p><b>Skills:</b> AI Hardware Acceleration · FPGA Design · Memory Interface Design · Pipelined Architecture · High-Speed Bus Protocols · SystemVerilog · Universal Verification Methodology (UVM) · Digital Designs</p>
+      </div>
+
+      <div class="project-card">
+        <h3><b>Real-Time Edge Detection on ARM Cortex-A9</b></h3>
+        <p>Designed and implemented Sobel, Roberts Cross, and Prewitt edge detection algorithms on ARM Cortex-A9 with Zybo Z7 FPGA. Built a real-time video pipeline with dual frame buffers, AXI Video DMA, and HDMI I/O, achieving 35% improved data throughput for live edge detection.</p>
+        <p><b>Skills:</b> ARM Cortex-A9 · Real-Time Image Processing · Video Processing Pipeline · AXI DMA · FPGA</p>
+      </div>
+
+      <div class="project-card">
+        <h3><b>Design and Verification of UART to I2C-Bus Bridge using UVM</b></h3>
+        <p>Created and executed a comprehensive test plan to verify a UART to I2C bus bridge using UVM. Designed a complete testbench with dual agent setup and scoreboard for protocol validation. Implemented a virtual sequencer for parallel UART/I2C data simulation and synchronization.</p>
+        <p><b>Skills:</b> SystemVerilog · UVM · UART · I2C · Functional Verification · Virtual Sequencer</p>
+      </div>
+
+      <div class="project-card">
+        <h3><b>4-Stage Pipelined Half-Precision Floating-Point Adder</b></h3>
+        <p>Developed a high-speed half-precision FP adder in Verilog with 4-stage pipelining. Improved execution time by 30% and reduced simulation memory usage by 20%. Verified operation using Synopsys VCS and implemented performance-driven design optimizations.</p>
+        <p><b>Skills:</b> Floating-Point Arithmetic · Verilog · Pipelined Architecture · Digital Design · Synopsys VCS</p>
+      </div>
+
+    
+      <div class="project-card">
+        <h3><b>Advanced Urban Traffic Light Control System Using FPGA</b></h3>
+        <p>Enhanced traffic flow efficiency by 20% through dynamic signal phase adjustments using a Finite State Machine to manage dynamic traffic light transitions based on pedestrian and vehicular inputs. Leveraged Nexys A7 FPGA for hardware implementation, with LED indicators for traffic signals and a 7-segment display for pedestrian signals. Achieved a 15% reduction in FPGA resource usage by optimizing Verilog code for logic utilization and timing constraints.</p>
+        <p>The system integrates pedestrian walking features and left-turn signal prioritization to ensure efficient intersection navigation. Developed using Verilog and FSMs, the controller dynamically allocates signal phases to maximize throughput and minimize congestion. It sets a new benchmark for urban mobility systems focused on safety, adaptability, and sustainability.</p>
+        <p><b>Skills:</b> Verilog · Xilinx Vivado · Field-Programmable Gate Arrays (FPGA)</p>
+      </div>
+</div>
+  </section>
+
+
+<script>
+// cleaned preload
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+  function hidePreloader() {
+    document.getElementById("preloader").style.display = "none
+</script>
+</body>
+
+</html>
